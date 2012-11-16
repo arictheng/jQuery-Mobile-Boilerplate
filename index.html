@@ -9,6 +9,13 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="320">
+    <meta http-equiv="X-UA-Compatible" content="chrome=IE8">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="test_edgePreload.js"></script>
+     <style>
+        .edgeLoad-EDGE-130892631 { visibility:hidden; }
+    </style>
+   
 
 	<!-- Home screen icon  Mathias Bynens mathiasbynens.be/notes/touch-icons -->
 	<!-- For iPhone 4 with high-resolution Retina display: -->
@@ -27,7 +34,7 @@
 	<link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" />
 
 	<!-- if you have a custom theme, add it here -->
-	<link rel="stylesheet"  href="themes/jQuery-Mobile-Boilerplate.css" />
+	<link rel="stylesheet"  href="themes/skypeBlue.css" />
 
 	<!-- Custom css -->
 	<link rel="stylesheet" href="css/custom.css" />
@@ -43,16 +50,18 @@
 	<!-- The script prevents links from opening in mobile safari. https://gist.github.com/1042026 -->
 	<script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
 </head> 
-<body> 
+<body style="margin:0;padding:0;"> 
 	<div data-role="page">
 
 		<div data-role="header">
+        <a href="../../index.html" data-icon="home">Home</a>
 			<h1>jQuery Mobile Boilerplate 1.2</h1>
 		</div>
 
 		<div data-role="content">
-		
-			<ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="b">
+		<div id="stage" class="EDGE-130892631" style="height:300px !important">
+	</div>
+			<ul data-role="listview" data-inset="true" data-theme="a" data-dividertheme="a">
 				<li data-role="list-divider">Snippet Pages</li>
 				<li><a href="buttons.html">Buttons</a></li>
 				<li><a href="grids.html">Grids</a></li>
@@ -64,7 +73,7 @@
 
 		</div>
 		
-		<div data-role="footer" data-theme="c">
+		<div data-role="footer" data-theme="a">
 			<p>&copy; 2012 - jQuery Mobile Boilerplate</p>
 		</div>	
 		
